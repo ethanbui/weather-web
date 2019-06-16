@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Pactera | Current Weather Service</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+<link th:href="@{/bootstrap/css/bootstrap.min.css}" rel="stylesheet"
+	type="text/css" />
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-sm p-2">
+	      <h2>Weather forecast</h2>
+	    </div>
+	</div>
+	
+	<div class="row">
+		<div class="col-sm-3 p-2">
+			<select id="select_city" name="select_city" class="form-control">
+				<option value="">- Choose City -</option>
+			</select>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm p-2 border">
+			City
+		</div>
+		<div class="col-sm p-2 border">
+			<span id="sp_city"></span>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm p-2 border">
+			Updated time
+		</div>
+		<div class="col-sm p-2 border">
+			<span id="sp_updated_time"></span>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm p-2 border">
+			Weather
+		</div>
+		<div class="col-sm p-2 border">
+			<span id="sp_weather"></span>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm p-2 border">
+			Temperature
+		</div>
+		<div class="col-sm p-2 border">
+			<span id="sp_temperature"></span>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm p-2 border">
+			Wind
+		</div>
+		<div class="col-sm p-2 border">
+			<span id="sp_wind"></span>
+		</div>
+	</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="warningModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalLabel">Warning</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<script th:src="@{/jquery/jquery.min.js}"></script>
+<script th:src="@{/popper/popper.min.js}"></script>
+<script th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+<script th:src="@{/scripts/weather.js}"></script>
+</html>

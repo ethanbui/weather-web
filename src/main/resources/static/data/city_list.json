@@ -1,0 +1,17 @@
+[
+	{
+		"id":"1",
+		"name":"Sydney",
+		"country":"Au"
+	},
+	{
+		"id":"2",
+		"name":"Melbourne",
+		"country":"Au"
+	},
+	{
+		"id":"3",
+		"name":"Wollongong",
+		"country":"Au"
+	}
+]
