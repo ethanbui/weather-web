@@ -16902,3 +16902,141 @@ com.pactera.weather.exception.WeatherException: Cannot get weather information. 
 2019-06-16 19:25:29.057 DEBUG 11884 --- [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.pactera.weather.model.City@1a6dc589, com.pactera.weather.model.City@697a34af, com.pactera.weath (truncated)...]
 2019-06-16 19:25:29.064 DEBUG 11884 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@bae7dc0, started on Sun Jun 16 19:25:25 SGT 2019
 2019-06-16 19:25:29.066  INFO 11884 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-16 19:31:49.804  INFO 8656 --- [main] c.pactera.weather.WeatherWebApplication  : Starting WeatherWebApplication on BadMan-PC with PID 8656 (E:\BadMan\assignments\weather-web\target\classes started by Viet Bui in E:\BadMan\assignments\weather-web)
+2019-06-16 19:31:49.808  INFO 8656 --- [main] c.pactera.weather.WeatherWebApplication  : No active profile set, falling back to default profiles: default
+2019-06-16 19:31:50.792  INFO 8656 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2019-06-16 19:31:50.816  INFO 8656 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-16 19:31:50.816  INFO 8656 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-06-16 19:31:50.923  INFO 8656 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-16 19:31:50.924 DEBUG 8656 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-06-16 19:31:50.924  INFO 8656 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1072 ms
+2019-06-16 19:31:51.121 DEBUG 8656 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-06-16 19:31:51.164  INFO 8656 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-16 19:31:51.175 DEBUG 8656 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-06-16 19:31:51.228 DEBUG 8656 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2019-06-16 19:31:51.238 DEBUG 8656 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /jquery/**, /popper/**, /bootstrap/**, /scripts/**] in 'resourceHandlerMapping'
+2019-06-16 19:31:51.247 DEBUG 8656 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-06-16 19:31:51.292  INFO 8656 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-06-16 19:31:51.381  INFO 8656 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2019-06-16 19:31:51.385  INFO 8656 --- [main] c.pactera.weather.WeatherWebApplication  : Started WeatherWebApplication in 1.986 seconds (JVM running for 2.828)
+2019-06-16 19:32:01.855  INFO 8656 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-16 19:32:01.855  INFO 8656 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-06-16 19:32:01.856 DEBUG 8656 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-06-16 19:32:01.863 DEBUG 8656 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-06-16 19:32:01.863  INFO 8656 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-06-16 19:32:01.874 DEBUG 8656 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2019-06-16 19:32:01.878 DEBUG 8656 --- [http-nio-9999-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.pactera.weather.controller.WeatherController.index(org.springframework.ui.Model)
+2019-06-16 19:32:01.899 DEBUG 8656 --- [http-nio-9999-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8]
+2019-06-16 19:32:02.317 DEBUG 8656 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-06-16 19:32:02.340 DEBUG 8656 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/bootstrap/css/bootstrap.min.css", parameters={}
+2019-06-16 19:32:02.344 DEBUG 8656 --- [http-nio-9999-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/jquery/jquery.min.js", parameters={}
+2019-06-16 19:32:02.347 DEBUG 8656 --- [http-nio-9999-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/jquery/3.4.1/"]
+2019-06-16 19:32:02.347 DEBUG 8656 --- [http-nio-9999-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/bootstrap/4.3.1/"]
+2019-06-16 19:32:02.353 DEBUG 8656 --- [http-nio-9999-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/scripts/weather.js", parameters={}
+2019-06-16 19:32:02.356 DEBUG 8656 --- [http-nio-9999-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/popper/popper.min.js", parameters={}
+2019-06-16 19:32:02.356 DEBUG 8656 --- [http-nio-9999-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/bootstrap/js/bootstrap.min.js", parameters={}
+2019-06-16 19:32:02.356 DEBUG 8656 --- [http-nio-9999-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/static/js/"]
+2019-06-16 19:32:02.358 DEBUG 8656 --- [http-nio-9999-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/popper.js/1.14.3/umd/"]
+2019-06-16 19:32:02.358 DEBUG 8656 --- [http-nio-9999-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/bootstrap/4.3.1/"]
+2019-06-16 19:32:02.374 DEBUG 8656 --- [http-nio-9999-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-06-16 19:32:02.374 DEBUG 8656 --- [http-nio-9999-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-06-16 19:32:02.377 DEBUG 8656 --- [http-nio-9999-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-06-16 19:32:02.378 DEBUG 8656 --- [http-nio-9999-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-06-16 19:32:02.379 DEBUG 8656 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-06-16 19:32:02.626 DEBUG 8656 --- [http-nio-9999-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/bootstrap/css/bootstrap.min.css.map", parameters={}
+2019-06-16 19:32:02.627 DEBUG 8656 --- [http-nio-9999-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/bootstrap/4.3.1/"]
+2019-06-16 19:32:02.664 DEBUG 8656 --- [http-nio-9999-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-06-16 19:32:02.683 DEBUG 8656 --- [http-nio-9999-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/popper/popper.min.js.map", parameters={}
+2019-06-16 19:32:02.686 DEBUG 8656 --- [http-nio-9999-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/popper.js/1.14.3/umd/"]
+2019-06-16 19:32:02.694 DEBUG 8656 --- [http-nio-9999-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-06-16 19:32:02.706 DEBUG 8656 --- [http-nio-9999-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/bootstrap/js/bootstrap.min.js.map", parameters={}
+2019-06-16 19:32:02.707 DEBUG 8656 --- [http-nio-9999-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/bootstrap/4.3.1/"]
+2019-06-16 19:32:02.715 DEBUG 8656 --- [http-nio-9999-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-06-16 19:32:02.835 DEBUG 8656 --- [http-nio-9999-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/retrieveCityList.json", parameters={}
+2019-06-16 19:32:02.836 DEBUG 8656 --- [http-nio-9999-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<java.lang.Object> com.pactera.weather.controller.WeatherController.retrieveCityList()
+2019-06-16 19:32:02.905 DEBUG 8656 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2019-06-16 19:32:02.905 DEBUG 8656 --- [http-nio-9999-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2019-06-16 19:32:02.912 DEBUG 8656 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-06-16 19:32:02.931 DEBUG 8656 --- [http-nio-9999-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json]
+2019-06-16 19:32:02.938 DEBUG 8656 --- [http-nio-9999-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.pactera.weather.model.City@44937d9e, com.pactera.weather.model.City@2910b655, com.pactera.weath (truncated)...]
+2019-06-16 19:32:02.957 DEBUG 8656 --- [http-nio-9999-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-06-16 19:32:03.762 DEBUG 8656 --- [http-nio-9999-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/retrieveCityWeather.json", parameters={masked}
+2019-06-16 19:32:03.763 DEBUG 8656 --- [http-nio-9999-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<java.lang.Object> com.pactera.weather.controller.WeatherController.retrieveCityWeather(java.lang.String)
+2019-06-16 19:32:03.798 DEBUG 8656 --- [http-nio-9999-exec-4] o.s.web.client.RestTemplate              : HTTP GET http://api.openweathermap.org/data/2.5/weather?q=Sydney,Au&appid=f85be409dc5a150b3b0bb63e05930dd8&units=metric
+2019-06-16 19:32:03.809 DEBUG 8656 --- [http-nio-9999-exec-4] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2019-06-16 19:32:03.810  INFO 8656 --- [http-nio-9999-exec-4] c.p.w.logging.HttpRequestInterceptor     : ================request begin================
+2019-06-16 19:32:03.811  INFO 8656 --- [http-nio-9999-exec-4] c.p.w.logging.HttpRequestInterceptor     : Headers: [Accept:"application/json, application/*+json", Content-Length:"0"]
+2019-06-16 19:32:03.812  INFO 8656 --- [http-nio-9999-exec-4] c.p.w.logging.HttpRequestInterceptor     : Request Method: GET
+2019-06-16 19:32:03.812  INFO 8656 --- [http-nio-9999-exec-4] c.p.w.logging.HttpRequestInterceptor     : Request URI: http://api.openweathermap.org/data/2.5/weather?q=Sydney,Au&appid=f85be409dc5a150b3b0bb63e05930dd8&units=metric
+2019-06-16 19:32:03.812  INFO 8656 --- [http-nio-9999-exec-4] c.p.w.logging.HttpRequestInterceptor     : ================request end================
+2019-06-16 19:32:03.863  INFO 8656 --- [http-nio-9999-exec-4] c.p.w.logging.HttpRequestInterceptor     : ================response begin================
+2019-06-16 19:32:03.863  INFO 8656 --- [http-nio-9999-exec-4] c.p.w.logging.HttpRequestInterceptor     : Status code  : 200 OK
+2019-06-16 19:32:03.863  INFO 8656 --- [http-nio-9999-exec-4] c.p.w.logging.HttpRequestInterceptor     : Status text  : OK
+2019-06-16 19:32:03.863  INFO 8656 --- [http-nio-9999-exec-4] c.p.w.logging.HttpRequestInterceptor     : Headers      : [Server:"openresty", Date:"Sun, 16 Jun 2019 11:32:03 GMT", Content-Type:"application/json; charset=utf-8", Content-Length:"468", Connection:"keep-alive", X-Cache-Key:"/data/2.5/weather?q=sydney,au&units=metric", Access-Control-Allow-Origin:"*", Access-Control-Allow-Credentials:"true", Access-Control-Allow-Methods:"GET, POST"]
+2019-06-16 19:32:03.863  INFO 8656 --- [http-nio-9999-exec-4] c.p.w.logging.HttpRequestInterceptor     : Response body: {"coord":{"lon":151.22,"lat":-33.85},"weather":[{"id":804,"main":"Clouds","description":"overcast clouds","icon":"04n"}],"base":"stations","main":{"temp":11.89,"pressure":1020,"humidity":100,"temp_min":10.56,"temp_max":13.33},"visibility":10000,"wind":{"speed":3.6,"deg":230},"clouds":{"all":90},"dt":1560684132,"sys":{"type":1,"id":9599,"message":0.0067,"country":"AU","sunrise":1560632303,"sunset":1560667980},"timezone":36000,"id":2147714,"name":"Sydney","cod":200}
+2019-06-16 19:32:03.863  INFO 8656 --- [http-nio-9999-exec-4] c.p.w.logging.HttpRequestInterceptor     : ================response end================
+2019-06-16 19:32:03.863 DEBUG 8656 --- [http-nio-9999-exec-4] o.s.web.client.RestTemplate              : Response 200 OK
+2019-06-16 19:32:03.864 DEBUG 8656 --- [http-nio-9999-exec-4] o.s.web.client.RestTemplate              : Reading to [com.pactera.weather.model.OpenWeatherData]
+2019-06-16 19:32:03.875 DEBUG 8656 --- [http-nio-9999-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json]
+2019-06-16 19:32:03.877 DEBUG 8656 --- [http-nio-9999-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.pactera.weather.model.WeatherResponse@5210fbc0]
+2019-06-16 19:32:03.878 DEBUG 8656 --- [http-nio-9999-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-06-16 19:36:10.945 DEBUG 8656 --- [http-nio-9999-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/retrieveCityWeather.json", parameters={masked}
+2019-06-16 19:36:10.948 DEBUG 8656 --- [http-nio-9999-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<java.lang.Object> com.pactera.weather.controller.WeatherController.retrieveCityWeather(java.lang.String)
+2019-06-16 19:36:10.953 DEBUG 8656 --- [http-nio-9999-exec-8] o.s.web.client.RestTemplate              : HTTP GET http://api.openweathermap.org/data/2.5/weather?q=Melbourne,Au&appid=f85be409dc5a150b3b0bb63e05930dd8&units=metric
+2019-06-16 19:36:10.954 DEBUG 8656 --- [http-nio-9999-exec-8] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2019-06-16 19:36:10.955  INFO 8656 --- [http-nio-9999-exec-8] c.p.w.logging.HttpRequestInterceptor     : ================request begin================
+2019-06-16 19:36:10.955  INFO 8656 --- [http-nio-9999-exec-8] c.p.w.logging.HttpRequestInterceptor     : Headers: [Accept:"application/json, application/*+json", Content-Length:"0"]
+2019-06-16 19:36:10.955  INFO 8656 --- [http-nio-9999-exec-8] c.p.w.logging.HttpRequestInterceptor     : Request Method: GET
+2019-06-16 19:36:10.955  INFO 8656 --- [http-nio-9999-exec-8] c.p.w.logging.HttpRequestInterceptor     : Request URI: http://api.openweathermap.org/data/2.5/weather?q=Melbourne,Au&appid=f85be409dc5a150b3b0bb63e05930dd8&units=metric
+2019-06-16 19:36:10.955  INFO 8656 --- [http-nio-9999-exec-8] c.p.w.logging.HttpRequestInterceptor     : ================request end================
+2019-06-16 19:36:11.070  INFO 8656 --- [http-nio-9999-exec-8] c.p.w.logging.HttpRequestInterceptor     : ================response begin================
+2019-06-16 19:36:11.070  INFO 8656 --- [http-nio-9999-exec-8] c.p.w.logging.HttpRequestInterceptor     : Status code  : 200 OK
+2019-06-16 19:36:11.071  INFO 8656 --- [http-nio-9999-exec-8] c.p.w.logging.HttpRequestInterceptor     : Status text  : OK
+2019-06-16 19:36:11.071  INFO 8656 --- [http-nio-9999-exec-8] c.p.w.logging.HttpRequestInterceptor     : Headers      : [Server:"openresty", Date:"Sun, 16 Jun 2019 11:36:11 GMT", Content-Type:"application/json; charset=utf-8", Content-Length:"440", Connection:"keep-alive", X-Cache-Key:"/data/2.5/weather?q=melbourne,au&units=metric", Access-Control-Allow-Origin:"*", Access-Control-Allow-Credentials:"true", Access-Control-Allow-Methods:"GET, POST"]
+2019-06-16 19:36:11.071  INFO 8656 --- [http-nio-9999-exec-8] c.p.w.logging.HttpRequestInterceptor     : Response body: {"coord":{"lon":144.96,"lat":-37.81},"weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"01n"}],"base":"stations","main":{"temp":9.5,"pressure":1023,"humidity":87,"temp_min":7.22,"temp_max":11.67},"wind":{"speed":3.6,"deg":330},"clouds":{"all":3},"dt":1560684824,"sys":{"type":1,"id":9548,"message":0.0068,"country":"AU","sunrise":1560634445,"sunset":1560668844},"timezone":36000,"id":2158177,"name":"Melbourne","cod":200}
+2019-06-16 19:36:11.071  INFO 8656 --- [http-nio-9999-exec-8] c.p.w.logging.HttpRequestInterceptor     : ================response end================
+2019-06-16 19:36:11.071 DEBUG 8656 --- [http-nio-9999-exec-8] o.s.web.client.RestTemplate              : Response 200 OK
+2019-06-16 19:36:11.072 DEBUG 8656 --- [http-nio-9999-exec-8] o.s.web.client.RestTemplate              : Reading to [com.pactera.weather.model.OpenWeatherData]
+2019-06-16 19:36:11.073 DEBUG 8656 --- [http-nio-9999-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json]
+2019-06-16 19:36:11.073 DEBUG 8656 --- [http-nio-9999-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.pactera.weather.model.WeatherResponse@f99bb50]
+2019-06-16 19:36:11.074 DEBUG 8656 --- [http-nio-9999-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-06-16 19:36:11.964 DEBUG 8656 --- [http-nio-9999-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/retrieveCityWeather.json", parameters={masked}
+2019-06-16 19:36:11.965 DEBUG 8656 --- [http-nio-9999-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<java.lang.Object> com.pactera.weather.controller.WeatherController.retrieveCityWeather(java.lang.String)
+2019-06-16 19:36:11.968 DEBUG 8656 --- [http-nio-9999-exec-10] o.s.web.client.RestTemplate              : HTTP GET http://api.openweathermap.org/data/2.5/weather?q=Wollongong,Au&appid=f85be409dc5a150b3b0bb63e05930dd8&units=metric
+2019-06-16 19:36:11.969 DEBUG 8656 --- [http-nio-9999-exec-10] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2019-06-16 19:36:11.969  INFO 8656 --- [http-nio-9999-exec-10] c.p.w.logging.HttpRequestInterceptor     : ================request begin================
+2019-06-16 19:36:11.969  INFO 8656 --- [http-nio-9999-exec-10] c.p.w.logging.HttpRequestInterceptor     : Headers: [Accept:"application/json, application/*+json", Content-Length:"0"]
+2019-06-16 19:36:11.969  INFO 8656 --- [http-nio-9999-exec-10] c.p.w.logging.HttpRequestInterceptor     : Request Method: GET
+2019-06-16 19:36:11.970  INFO 8656 --- [http-nio-9999-exec-10] c.p.w.logging.HttpRequestInterceptor     : Request URI: http://api.openweathermap.org/data/2.5/weather?q=Wollongong,Au&appid=f85be409dc5a150b3b0bb63e05930dd8&units=metric
+2019-06-16 19:36:11.970  INFO 8656 --- [http-nio-9999-exec-10] c.p.w.logging.HttpRequestInterceptor     : ================request end================
+2019-06-16 19:36:12.157  INFO 8656 --- [http-nio-9999-exec-10] c.p.w.logging.HttpRequestInterceptor     : ================response begin================
+2019-06-16 19:36:12.157  INFO 8656 --- [http-nio-9999-exec-10] c.p.w.logging.HttpRequestInterceptor     : Status code  : 200 OK
+2019-06-16 19:36:12.157  INFO 8656 --- [http-nio-9999-exec-10] c.p.w.logging.HttpRequestInterceptor     : Status text  : OK
+2019-06-16 19:36:12.157  INFO 8656 --- [http-nio-9999-exec-10] c.p.w.logging.HttpRequestInterceptor     : Headers      : [Server:"openresty", Date:"Sun, 16 Jun 2019 11:36:12 GMT", Content-Type:"application/json; charset=utf-8", Content-Length:"467", Connection:"keep-alive", X-Cache-Key:"/data/2.5/weather?q=wollongong,au&units=metric", Access-Control-Allow-Origin:"*", Access-Control-Allow-Credentials:"true", Access-Control-Allow-Methods:"GET, POST"]
+2019-06-16 19:36:12.157  INFO 8656 --- [http-nio-9999-exec-10] c.p.w.logging.HttpRequestInterceptor     : Response body: {"coord":{"lon":150.89,"lat":-34.42},"weather":[{"id":803,"main":"Clouds","description":"broken clouds","icon":"04n"}],"base":"stations","main":{"temp":11.92,"pressure":1021,"humidity":100,"temp_min":11,"temp_max":13.33},"visibility":10000,"wind":{"speed":3.1,"deg":230},"clouds":{"all":75},"dt":1560684972,"sys":{"type":1,"id":9594,"message":0.0054,"country":"AU","sunrise":1560632470,"sunset":1560667972},"timezone":36000,"id":2171507,"name":"Wollongong","cod":200}
+2019-06-16 19:36:12.158  INFO 8656 --- [http-nio-9999-exec-10] c.p.w.logging.HttpRequestInterceptor     : ================response end================
+2019-06-16 19:36:12.158 DEBUG 8656 --- [http-nio-9999-exec-10] o.s.web.client.RestTemplate              : Response 200 OK
+2019-06-16 19:36:12.158 DEBUG 8656 --- [http-nio-9999-exec-10] o.s.web.client.RestTemplate              : Reading to [com.pactera.weather.model.OpenWeatherData]
+2019-06-16 19:36:12.159 DEBUG 8656 --- [http-nio-9999-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json]
+2019-06-16 19:36:12.159 DEBUG 8656 --- [http-nio-9999-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.pactera.weather.model.WeatherResponse@4ae64df7]
+2019-06-16 19:36:12.160 DEBUG 8656 --- [http-nio-9999-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-06-16 19:36:13.553 DEBUG 8656 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/retrieveCityWeather.json", parameters={masked}
+2019-06-16 19:36:13.554 DEBUG 8656 --- [http-nio-9999-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<java.lang.Object> com.pactera.weather.controller.WeatherController.retrieveCityWeather(java.lang.String)
+2019-06-16 19:36:13.557 DEBUG 8656 --- [http-nio-9999-exec-1] o.s.web.client.RestTemplate              : HTTP GET http://api.openweathermap.org/data/2.5/weather?q=Sydney,Au&appid=f85be409dc5a150b3b0bb63e05930dd8&units=metric
+2019-06-16 19:36:13.558 DEBUG 8656 --- [http-nio-9999-exec-1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2019-06-16 19:36:13.558  INFO 8656 --- [http-nio-9999-exec-1] c.p.w.logging.HttpRequestInterceptor     : ================request begin================
+2019-06-16 19:36:13.558  INFO 8656 --- [http-nio-9999-exec-1] c.p.w.logging.HttpRequestInterceptor     : Headers: [Accept:"application/json, application/*+json", Content-Length:"0"]
+2019-06-16 19:36:13.558  INFO 8656 --- [http-nio-9999-exec-1] c.p.w.logging.HttpRequestInterceptor     : Request Method: GET
+2019-06-16 19:36:13.558  INFO 8656 --- [http-nio-9999-exec-1] c.p.w.logging.HttpRequestInterceptor     : Request URI: http://api.openweathermap.org/data/2.5/weather?q=Sydney,Au&appid=f85be409dc5a150b3b0bb63e05930dd8&units=metric
+2019-06-16 19:36:13.558  INFO 8656 --- [http-nio-9999-exec-1] c.p.w.logging.HttpRequestInterceptor     : ================request end================
+2019-06-16 19:36:13.578  INFO 8656 --- [http-nio-9999-exec-1] c.p.w.logging.HttpRequestInterceptor     : ================response begin================
+2019-06-16 19:36:13.578  INFO 8656 --- [http-nio-9999-exec-1] c.p.w.logging.HttpRequestInterceptor     : Status code  : 200 OK
+2019-06-16 19:36:13.578  INFO 8656 --- [http-nio-9999-exec-1] c.p.w.logging.HttpRequestInterceptor     : Status text  : OK
+2019-06-16 19:36:13.578  INFO 8656 --- [http-nio-9999-exec-1] c.p.w.logging.HttpRequestInterceptor     : Headers      : [Server:"openresty", Date:"Sun, 16 Jun 2019 11:36:13 GMT", Content-Type:"application/json; charset=utf-8", Content-Length:"465", Connection:"keep-alive", X-Cache-Key:"/data/2.5/weather?q=sydney,au&units=metric", Access-Control-Allow-Origin:"*", Access-Control-Allow-Credentials:"true", Access-Control-Allow-Methods:"GET, POST"]
+2019-06-16 19:36:13.579  INFO 8656 --- [http-nio-9999-exec-1] c.p.w.logging.HttpRequestInterceptor     : Response body: {"coord":{"lon":151.22,"lat":-33.85},"weather":[{"id":803,"main":"Clouds","description":"broken clouds","icon":"04n"}],"base":"stations","main":{"temp":11.85,"pressure":1020,"humidity":87,"temp_min":10.56,"temp_max":13.33},"visibility":10000,"wind":{"speed":4.6,"deg":210},"clouds":{"all":75},"dt":1560684746,"sys":{"type":1,"id":9599,"message":0.0079,"country":"AU","sunrise":1560632303,"sunset":1560667980},"timezone":36000,"id":2147714,"name":"Sydney","cod":200}
+2019-06-16 19:36:13.579  INFO 8656 --- [http-nio-9999-exec-1] c.p.w.logging.HttpRequestInterceptor     : ================response end================
+2019-06-16 19:36:13.579 DEBUG 8656 --- [http-nio-9999-exec-1] o.s.web.client.RestTemplate              : Response 200 OK
+2019-06-16 19:36:13.579 DEBUG 8656 --- [http-nio-9999-exec-1] o.s.web.client.RestTemplate              : Reading to [com.pactera.weather.model.OpenWeatherData]
+2019-06-16 19:36:13.580 DEBUG 8656 --- [http-nio-9999-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json]
+2019-06-16 19:36:13.580 DEBUG 8656 --- [http-nio-9999-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.pactera.weather.model.WeatherResponse@6c49b146]
+2019-06-16 19:36:13.581 DEBUG 8656 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
