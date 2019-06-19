@@ -1,6 +1,6 @@
 Get Current Weather
 ===
-This is a web application built with Spring Boot to display current weather for 3 Austrian cities: Sydney, Melbourne and Wollongong.
+This is a web application built with Spring Boot to display current weather for 3 Australian cities: Sydney, Melbourne and Wollongong.
 There will be a dropdown list on the web page for city selection, when city is changed, corresponding real-time weather information will be displayed.
 Currently it only supports Openweathermap.
 
