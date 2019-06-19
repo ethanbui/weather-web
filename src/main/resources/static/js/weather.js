@@ -50,8 +50,10 @@ var WeatherService = function() {
 	}
 	
 	var fillWeatherData = function(response) {
+		var currentDate = moment().format('dddd h:mm A'); 
+		
 		$('#sp_city').text(response.city || '');
-		$('#sp_updated_time').text(response.updatedTime || '');
+		$('#sp_updated_time').text(currentDate);
 		$('#sp_weather').text(response.weather || '');
 		$('#sp_temperature').html((response.temperature) ?  response.temperature + "&#8451;" : '');
 		$('#sp_wind').text(response.wind || '');

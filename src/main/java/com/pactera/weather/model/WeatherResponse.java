@@ -2,7 +2,6 @@ package com.pactera.weather.model;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.TimeZone;
 
 import org.thymeleaf.util.StringUtils;
 
@@ -24,8 +23,6 @@ public class WeatherResponse {
 		private boolean isSpeedInKmhr;
 		private boolean convertToKmhr;
 
-		private TimeZone timeZone;
-		
 		public Builder() {}
 		
 		public Builder(String city, String weather, String temperature, String wind) {
@@ -50,20 +47,12 @@ public class WeatherResponse {
 			return this;
 		}
 
-		public Builder timeZone(TimeZone timeZone) {
-			this.timeZone = timeZone;
-			return this;
-		}
-		
 		public WeatherResponse build() {
-			SimpleDateFormat dateFormat = new SimpleDateFormat(Constants.DATE_FORMAT);
-			dateFormat.setTimeZone(timeZone);
-			
 			WeatherResponse response = new WeatherResponse();
 			response.city = this.city;
 			response.weather = StringUtils.capitalizeWords(this.weather.toLowerCase());
 			response.temperature = this.temperature;
-			response.updatedTime = dateFormat.format(new Date());
+			response.updatedTime = new SimpleDateFormat(Constants.DATE_FORMAT).format(new Date());
 
 			if(!isSpeedInKmhr && convertToKmhr) {
 				double windSpeed = Double.parseDouble(this.wind);

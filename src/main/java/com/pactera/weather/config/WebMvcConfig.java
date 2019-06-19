@@ -16,7 +16,10 @@ public class WebMvcConfig implements WebMvcConfigurer {
 
 		registry.addResourceHandler("/bootstrap/**")
 				.addResourceLocations("classpath:/META-INF/resources/webjars/bootstrap/4.3.1/");
-
+		
+		registry.addResourceHandler("/momentjs/**")
+				.addResourceLocations("classpath:/META-INF/resources/webjars/momentjs/2.24.0/");
+		
 		registry.addResourceHandler("/scripts/**") //
 				.addResourceLocations("classpath:/static/js/");
 

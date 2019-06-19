@@ -2,7 +2,6 @@ package com.pactera.weather.controller;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.TimeZone;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -48,7 +47,7 @@ public class WeatherController {
 	}
 	
 	@PostMapping(path = "/retrieveCityWeather.json", produces=MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<Object> retrieveCityWeather(@RequestParam String id, TimeZone timeZone) {
+	public ResponseEntity<Object> retrieveCityWeather(@RequestParam String id) {
 		List<City> cityList = cityService.getCityList();
 		Optional<City> optCity = cityList.stream().filter(city -> id.equals(city.getId())).findFirst();
 		
@@ -72,7 +71,6 @@ public class WeatherController {
 						.speedSuffix(apiConfig.getOpenWeather().getSpeedSuffix())
 						.isSpeedInKmhr(false)
 						.convertToKmhr(true)
-						.timeZone(timeZone)
 						.build();
 		
 		return new ResponseEntity<>(response, HttpStatus.OK);
