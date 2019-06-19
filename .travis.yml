@@ -4,3 +4,9 @@ jdk:
  
 before_install:
   - chmod +x mvnw
+  
+deploy:
+   provider: heroku
+   api-key: 
+      secure: 76d45c69-e8c6-44a8-a1f7-6577bf3d91fb
+   app: e-weather-web-demo
