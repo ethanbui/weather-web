@@ -8,7 +8,7 @@ Technology stack:
 
 * Spring Boot
 * Spring MVC
-* Spring Test/JUnit/Mockito
+* Spring Test/JUnit/MockMvc
 * jQuery
 * Bootstrap
 
