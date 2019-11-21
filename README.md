@@ -2,6 +2,7 @@ Get Current Weather
 ===
 This is a web application built with Spring Boot to display current weather for 3 Australian cities: Sydney, Melbourne and Wollongong.
 There will be a dropdown list on the web page for city selection, when city is changed, corresponding real-time weather information will be displayed.
+
 Currently it only supports Openweathermap.
 
 Technology stack:
@@ -54,6 +55,10 @@ You can use following approaches to run this project.
 Screenshot
 -----
 ![Weather](https://raw.github.com/ethanbui/weather-web/master/Screenshot.png) 
+
+## CICD
+
+Please refer to **CICD.md** for how we can use Github, Travis CI and Heroku for Continuous Integration and Continuous Deployment (CI/CD) for this project.
 
 Developed By
 ------------
